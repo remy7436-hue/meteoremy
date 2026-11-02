@@ -1,7 +1,7 @@
 async function loadWeatherData() {
     try {
         // On va chercher le fichier realtime.txt brut depuis GitHub (chemin relatif)
-        const response = await fetch('realtime.txt?' + new Date().getTime());
+        const response = await fetch('wxnow.txt?' + new Date().getTime());
         if (!response.ok) throw new Error("Impossible de charger le fichier realtime.txt");
 
         const text = await response.text();
