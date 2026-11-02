@@ -8,4 +8,4 @@ Copy-Item $source $destination -Force
 # Envoie les modifications sur GitHub
 git add realtime.txt
 git commit -m "Mise auto meteo : $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
-git push origin main
+git push origin principal
